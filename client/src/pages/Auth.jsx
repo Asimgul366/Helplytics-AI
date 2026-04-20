@@ -53,7 +53,9 @@ export default function Auth() {
             <span className="text-white font-semibold text-sm">HelpHub AI</span>
           </div>
           <div className="flex gap-4">
-            {['Home', 'Explore', 'Leaderboard'].map(l => <span key={l} className="text-gray-400 text-sm">{l}</span>)}
+            <Link to="/" className="text-gray-400 text-sm hover:text-white">Home</Link>
+            <Link to="/explore" className="text-gray-400 text-sm hover:text-white">Explore</Link>
+            <Link to="/leaderboard" className="text-gray-400 text-sm hover:text-white">Leaderboard</Link>
           </div>
         </div>
       </div>

@@ -18,8 +18,13 @@ export default function Landing() {
           <span className="text-white font-semibold text-sm">HelpHub AI</span>
         </div>
         <div className="flex items-center gap-4">
-          {['Home', 'Explore', 'Leaderboard', 'AI Center'].map(l => (
-            <span key={l} className="text-gray-400 text-sm hover:text-white cursor-pointer">{l}</span>
+          {[
+            { label: 'Home', to: '/' },
+            { label: 'Explore', to: '/explore' },
+            { label: 'Leaderboard', to: '/leaderboard' },
+            { label: 'AI Center', to: '/ai-center' },
+          ].map(l => (
+            <Link key={l.label} to={l.to} className="text-gray-400 text-sm hover:text-white cursor-pointer">{l.label}</Link>
           ))}
           <span className="text-xs text-gray-400 border border-gray-600 px-3 py-1 rounded-full">Live community signals</span>
           <Link to="/auth" className="px-4 py-1.5 rounded-lg text-sm font-medium text-white" style={{ background: '#0d9488' }}>
