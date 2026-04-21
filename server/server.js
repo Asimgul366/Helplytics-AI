@@ -8,7 +8,15 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://helplytics-ai-nu.vercel.app',
+    'https://helplytics-ai-9kcl.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:5174'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes

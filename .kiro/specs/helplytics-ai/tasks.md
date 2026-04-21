@@ -163,7 +163,7 @@ Sequential implementation of the Helplytics AI MERN stack platform. The client (
     - **Property 33: Trust Score progress bar percentage always equals the score value**
     - **Validates: Requirements 12.6_
 
-  - [ ] 7.6 Create utility helpers
+  - [x] 7.6 Create utility helpers
     - Create `client/src/utils/trustScore.js` with badge threshold helpers and score formatting
     - Create `client/src/hooks/useDebounce.js` with a generic debounce hook (default 500ms)
     - _Requirements: 9.3, 6.2_
@@ -375,7 +375,7 @@ Sequential implementation of the Helplytics AI MERN stack platform. The client (
     - **Property 32: Edit profile form rejects empty or whitespace-only name**
     - **Validates: Requirements 12.5**
 
-- [ ] 21. Trust Score consistency across pages
+- [-] 21. Trust Score consistency across pages
   - Verify that Dashboard stats card, Profile TrustScoreBar, and Leaderboard entry all read from the same `user.trustScore` field returned by the API — no local overrides or stale state
   - _Requirements: 14.4, 14.5_
 
